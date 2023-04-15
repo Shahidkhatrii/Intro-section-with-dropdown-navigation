@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-size: 1.5rem;
+    font-family: 'Epilogue', sans-serif;
+    width: 100%;
+}
+
+head {
+    position: relative;
+}
+
+/* Nav Bar css */
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 700;
+}
+
+.menu_open_btn {
+    display: none;
+}
+
+.menu_close_btn {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.nav_bar {
+
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.nav_left_sectoion {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5rem;
+}
+
+.snap {
+    margin-top: -0.5rem;
+}
+
+.nav_left_sectoion .Features {
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav_left_sectoion .Company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav_right_sectoion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav_right_sectoion .register_btn {
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 8%);
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+}
+
+.features-section {
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: center;
+    width: fit-content;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
+    z-index: 1;
+    position: absolute;
+    top: 9%;
+    left: 9.5%;
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(132, 127, 127, 0.35) 0px 5px 15px;
+}
+
+.company-section {
+    width: fit-content;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1.5rem;
+    z-index: 1;
+
+    position: absolute;
+    top: 9%;
+    left: 22.2%;
+
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(132, 127, 127, 0.35) 0px 5px 15px;
+}
+
+.features-section .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features-section .items div {
+    text-align: center;
+    display: inline;
+    width: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* main body css */
+main {
+    position: relative;
+}
+
+.main_container {
+    padding: 13rem;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main_left_section {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+}
+
+.main_heading {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 8.5rem;
+    font-weight: 900;
+
+    margin-top: 9rem;
+}
+
+.main_para {
+    color: hsl(0, 0%, 41%);
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.learn_btn {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    width: 16rem;
+    padding: 2rem;
+    border: 2px solid hsl(0, 0%, 8%);
+    border-radius: 2rem;
+}
+
+.logo_container {
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.main_right_section img {
+    width: 47rem;
+    height: 65rem;
+}
+
+.mobile_img {
+    display: none;
+}
+
+.features-section-mobile {
+    display: none;
+}
+
+.company-section-mobile {
+    display: none;
+}
+
+.logo_box img {
+    width: 10rem;
+    height: auto;
+}
+
+@media(max-width: 1300px) {
+
+    html {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 1100px) {
+
+    html {
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 900px) {
+
+    html {
+        font-size: 4px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    html {
+        font-size: 3px;
+    }
+}
+
+@media(max-width: 600px) {
+
+
+    html {
+        font-size: 10px;
+    }
+
+
+    .logo_box img {
+        width: 8rem;
+        height: auto;
+    }
+
+    .mobile_nav {
+        margin: 3rem 2rem;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* .nav_bar {
+        display: flex;
+    } */
+
+    /* .nav_bar a {
+        display: none;
+    } */
+
+    .mobile_nav .menu_open_btn {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        z-index: 3;
+        display: block;
+    }
+
+    .mobile_nav .menu_close_btn {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        z-index: 3;
+        display: block;
+
+    }
+
+    .mobile_nav .hidden {
+        display: none;
+    }
+
+    .nav_bar .hidden {
+        display: none;
+    }
+
+    .mhidden {
+        display: none;
+    }
+
+    .nav_bar {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100%;
+        z-index: 1;
+        background-color: white;
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_bar .nav_left_sectoion {
+        margin-top: 12rem;
+        margin-left: -10rem;
+        font-size: 2.5rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .nav_bar .nav_right_sectoion {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .features-section {
+        position: relative;
+        box-shadow: none;
+        border-radius: none;
+        top: 0;
+        left: 0;
+        text-align: left;
+
+        font-family: inherit;
+        font-weight: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0;
+        margin-left: 2rem;
+        font-size: 1.6rem;
+    }
+
+
+    .features-section .items {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .features-section .items div {
+        text-align: center;
+        display: inline;
+        width: 2rem;
+    }
+
+    .company-section {
+        position: relative;
+        box-shadow: none;
+        border-radius: none;
+        top: 0;
+        left: 0;
+        text-align: left;
+
+        font-family: inherit;
+        font-weight: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-left: 2rem;
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    .overflow {
+        overflow-y: hidden;
+    }
+
+    .nav_left_sectoion .Features {
+        margin-left: 0;
+    }
+
+    .nav_left_sectoion .snap {
+        display: none;
+    }
+
+    .mobile_img {
+        display: inline;
+    }
+
+    .mobile_img img {
+        display: inline;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .desktop_img {
+        display: none;
+    }
+
+    .main_container {
+        position: relative;
+        margin-top: 2rem;
+        padding: 0rem;
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .main_left_section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .main_heading {
+        position: relative;
+        text-align: center;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .main_heading .break {
+        display: none;
+    }
+
+    .main_para {
+        position: relative;
+        color: hsl(0, 0%, 41%);
+        font-weight: 700;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .learn_btn_container {
+        position: relative;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .learn_btn {
+        position: relative;
+        margin-top: 10rem;
+        position: relative;
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        text-align: center;
+        width: 16rem;
+        padding: 2rem;
+        border: 2px solid hsl(0, 0%, 8%);
+        border-radius: 2rem;
+    }
+
+    .logo_container {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+
+}
+
+@media(max-width: 500px) {
+
+    html {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    html {
+        font-size: 6px;
+    }
+}
