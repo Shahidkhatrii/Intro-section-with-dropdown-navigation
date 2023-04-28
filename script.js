@@ -1,37 +1,3 @@
-// 'use strict'
-
-// const featureDownBtn = document.querySelector('.Features_down_btn');
-// const featureSection = document.querySelector('.features-section');
-// const featureUpBtn = document.querySelector('.Features_up_btn');
-
-// featureDownBtn.addEventListener('click',function(){
-//     featureSection.classList.remove('hidden');
-//     featureUpBtn.classList.remove('hidden');
-//     featureDownBtn.classList.add('hidden');
-// });
-// featureUpBtn.addEventListener('click',function(){
-//     featureSection.classList.add('hidden');
-//     featureUpBtn.classList.add('hidden');
-//     featureDownBtn.classList.remove('hidden');
-// });
-
-// const companyDownBtn = document.querySelector('.company_down_btn');
-// const companySection = document.querySelector('.company-section');
-// const companyUpBtn = document.querySelector('.company_up_btn');
-
-// companyDownBtn.addEventListener('click',function(){
-//     companySection.classList.remove('hidden');
-//     companyUpBtn.classList.remove('hidden');
-//     companyDownBtn.classList.add('hidden');
-
-// });
-// companyUpBtn.addEventListener('click',function(){
-//     companySection.classList.add('hidden');
-//     companyUpBtn.classList.add('hidden');
-//     companyDownBtn.classList.remove('hidden');
-
-// });
-
 "use strict";
 
 function toggleVisibility(downBtn, section, upBtn) {
